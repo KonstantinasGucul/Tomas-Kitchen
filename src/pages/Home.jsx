@@ -1,4 +1,4 @@
-import Menu from '../components/Menu';
+import Menu from '../components/MenuFolder/Menu';
 // import Testimonials from '../components/Testimonials';
 // import CTA from '../components/CTA';
 // import Footer from '../components/Footer';

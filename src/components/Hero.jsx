@@ -1,10 +1,10 @@
 export default function Hero() {
   return (
-    <main className="min-h-screen relative overflow-hidden">
+    <main id="home" className="min-h-screen relative overflow-hidden">
       {/* Background image with gradient overlay */}
       <div className="absolute inset-0 -z-10">
         <img
-          src="/images/hero.webp"
+          src="/images/hero/hero.webp"
           alt="Delicious street food"
           className="w-full h-full object-cover"
           loading="lazy"
@@ -36,9 +36,13 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 mt-10 w-full sm:w-auto">
-          <button className="min-w-[180px] px-6 py-3 bg-amber-700 hover:bg-amber-800 text-white font-medium rounded-md shadow transition-all duration-300 ease-in-out cursor-pointer">
+          <a
+            href="#menu"
+            className="min-w-[180px] px-6 py-3 bg-amber-700 hover:bg-amber-800 text-white font-medium rounded-md shadow text-center transition-all duration-300 ease-in-out cursor-pointer"
+          >
             Explore Menu
-          </button>
+          </a>
+
           <button className="min-w-[180px] px-6 py-3 border border-white/50 text-white hover:bg-white/10 font-medium rounded-md shadow transition-all duration-300 ease-in-out cursor-pointer">
             Contact
           </button>

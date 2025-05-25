@@ -1,33 +1,82 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const buffer = 120;
+
+      const sections = document.querySelectorAll('section[id], main[id]');
+      let current = '';
+
+      sections.forEach((section) => {
+        const top = section.offsetTop - buffer;
+        const height = section.offsetHeight;
+        const id = section.getAttribute('id');
+
+        if (scrollY >= top && scrollY < top + height) {
+          current = id;
+        }
+      });
+
+      setActiveSection(current || 'home');
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const handleNavClick = (e, key) => {
+    e.preventDefault();
+
+    if (key === 'menu') {
+      const el = document.getElementById('menu-scroll');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      const el = document.getElementById(key);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    setIsMenuOpen(false);
+  };
 
   return (
-    <header className="absolute top-0 left-0 w-full z-50 bg-gradient-to-b from-black/60 to-transparent text-white">
+    <header className="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-sm text-white shadow">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
-        <a href="/" className="flex items-center space-x-1" aria-label="Home">
+        <a
+          href="#home"
+          className="flex items-center space-x-1"
+          aria-label="Home"
+        >
           <span className="text-lg font-semibold text-amber-400 drop-shadow-md">
-            Tomas
+            Toma's
           </span>
           <span className="text-lg font-semibold text-white drop-shadow-md">
-            Food Wagon
+            Kitchen
           </span>
         </a>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-10 text-sm font-light tracking-wide">
-          {['Home', 'Menu', 'About', 'Contact'].map((text) => (
+          {['home', 'menu', 'about', 'contact'].map((key) => (
             <a
-              key={text}
-              href={`/${text === 'Home' ? '' : text.toLowerCase()}`}
-              className="text-white/80 hover:text-amber-300 transition-all duration-300 ease-in-out cursor-pointer"
+              key={key}
+              href={`#${key}`}
+              onClick={(e) => handleNavClick(e, key)}
+              className={`${
+                activeSection === key ? 'text-amber-400' : 'text-white/80'
+              } hover:text-amber-300 transition-all duration-300 ease-in-out cursor-pointer capitalize`}
             >
-              {text}
+              {key.charAt(0).toUpperCase() + key.slice(1)}
             </a>
           ))}
         </div>
@@ -61,16 +110,19 @@ export default function Navbar() {
       {/* Mobile Dropdown Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-black/80 px-6 pb-4 pt-2 space-y-2 text-sm transition-all duration-300 ease-in-out">
-          {['Home', 'Menu', 'About', 'Contact'].map((text) => (
+          {['home', 'menu', 'about', 'contact'].map((key) => (
             <a
-              key={text}
-              href={`/${text === 'Home' ? '' : text.toLowerCase()}`}
-              className="block text-white/80 hover:text-amber-300 transition-all duration-300 ease-in-out cursor-pointer"
-              onClick={() => setIsMenuOpen(false)}
+              key={key}
+              href={`#${key}`}
+              onClick={(e) => handleNavClick(e, key)}
+              className={`block ${
+                activeSection === key ? 'text-amber-400' : 'text-white/80'
+              } hover:text-amber-300 transition-all duration-300 ease-in-out cursor-pointer capitalize`}
             >
-              {text}
+              {key.charAt(0).toUpperCase() + key.slice(1)}
             </a>
           ))}
+
           <button
             aria-label="Order now"
             className="w-full mt-2 px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white rounded-md shadow transition-all duration-300 ease-in-out cursor-pointer"
