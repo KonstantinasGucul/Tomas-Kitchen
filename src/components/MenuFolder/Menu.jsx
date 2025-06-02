@@ -36,10 +36,12 @@ function Category({ title, items }) {
 
 export default function Menu() {
   return (
-    <section id="menu" className="bg-gray-50 py-20 px-4 sm:px-6 lg:px-8">
+    <section id="menu" className="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900">Our Menu</h2>
+          <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
+            Our Menu
+          </h2>
           <div className="mt-2 w-24 h-1 bg-amber-500 mx-auto" />
           <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
             Fresh, bold, and satisfying — explore our international street food

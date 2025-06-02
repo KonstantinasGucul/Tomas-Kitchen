@@ -36,15 +36,8 @@ export default function Navbar() {
 
   const handleNavClick = (e, key) => {
     e.preventDefault();
-
-    if (key === 'menu') {
-      const el = document.getElementById('menu-scroll');
-      if (el) el.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      const el = document.getElementById(key);
-      if (el) el.scrollIntoView({ behavior: 'smooth' });
-    }
-
+    const el = document.getElementById(key);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
     setIsMenuOpen(false);
   };
 

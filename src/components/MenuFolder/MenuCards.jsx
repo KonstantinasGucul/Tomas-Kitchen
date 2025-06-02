@@ -11,9 +11,11 @@ export default function MenuCard({ name, price, image }) {
       </div>
 
       <div className="p-4">
-        <div className="flex justify-between items-center">
-          <h4 className="text-lg font-semibold text-gray-800">{name}</h4>
-          <span className="text-amber-600 font-medium">{price}</span>
+        <div className="p-4 space-y-1">
+          <h4 className="text-lg font-semibold text-gray-800 leading-snug">
+            {name}
+          </h4>
+          <span className="text-amber-600 font-medium block">{price}</span>
         </div>
       </div>
     </div>
