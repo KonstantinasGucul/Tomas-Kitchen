@@ -67,7 +67,7 @@ export default function Navbar() {
               onClick={(e) => handleNavClick(e, key)}
               className={`${
                 activeSection === key ? 'text-amber-400' : 'text-white/80'
-              } hover:text-amber-300 transition-all duration-300 ease-in-out cursor-pointer capitalize`}
+              } hover:text-amber-700 transition-all duration-300 ease-in-out cursor-pointer capitalize`}
             >
               {key.charAt(0).toUpperCase() + key.slice(1)}
             </a>
@@ -78,7 +78,7 @@ export default function Navbar() {
         <div className="hidden md:flex">
           <button
             aria-label="Order now"
-            className="px-5 py-2 text-sm font-medium bg-amber-700 hover:bg-amber-800 text-white rounded-md shadow transition-all duration-300 ease-in-out cursor-pointer"
+            className="px-5 py-2 text-sm font-medium bg-amber-700 hover:bg-amber-400 text-white rounded-md shadow transition-all duration-300 ease-in-out cursor-pointer"
           >
             Order
           </button>
