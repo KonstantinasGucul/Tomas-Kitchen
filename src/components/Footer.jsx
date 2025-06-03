@@ -5,7 +5,10 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
 
   return (
     <footer className="bg-black/80 text-white backdrop-blur-sm shadow">
-      <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div
+        className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4
+ gap-4 lg:gap-6"
+      >
         {/* Brand */}
         <div>
           <h3 className="text-xl font-bold drop-shadow-md">
@@ -16,38 +19,6 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
             Authentic street food from around the world. Fresh, bold, and always
             delicious.
           </p>
-        </div>
-
-        {/* Quick Links */}
-        <div>
-          <h4 className="text-lg font-semibold text-amber-400 mb-3">
-            Quick Links
-          </h4>
-          <ul className="space-y-2 text-sm text-white/80">
-            <li>
-              <a href="#home" className="hover:text-amber-300 transition">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#menu" className="hover:text-amber-300 transition">
-                Menu
-              </a>
-            </li>
-            <li>
-              <a
-                href="#testimonials"
-                className="hover:text-amber-300 transition"
-              >
-                Testimonials
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="hover:text-amber-300 transition">
-                Contact
-              </a>
-            </li>
-          </ul>
         </div>
 
         {/* Contact Info */}
@@ -62,7 +33,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
                 href="https://www.google.com/maps?q=Second+Drove+Unit+39,+Peterborough,+UK,+PE1+5XA"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-amber-300 transition"
+                className="hover:text-amber-700 transition"
               >
                 Second Drove Unit 39, Peterborough, UK, PE1 5XA
               </a>
@@ -71,7 +42,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
               <Phone className="h-4 w-4 text-amber-400" />
               <a
                 href="tel:+447925622897"
-                className="hover:text-amber-300 transition"
+                className="hover:text-amber-700 transition"
               >
                 +44 7925 622897
               </a>
@@ -80,7 +51,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
               <Mail className="h-4 w-4 text-amber-400" />
               <a
                 href="mailto:zeinalovas@gmail.com"
-                className="hover:text-amber-300 transition"
+                className="hover:text-amber-700 transition"
               >
                 zeinalovas@gmail.com
               </a>
@@ -131,9 +102,41 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
               </svg>
             </a>
           </div>
-          <p className="text-xs text-white/60 mt-3">
+          <p className="text-sm text-white/80 mt-3">
             Stay updated with our latest menu items and locations!
           </p>
+        </div>
+
+        {/* Quick Links */}
+        <div>
+          <h4 className="text-lg font-semibold text-amber-400 mb-3">
+            Quick Links
+          </h4>
+          <ul className="space-y-2 text-sm text-white/80">
+            <li>
+              <a href="#home" className="hover:text-amber-700 transition">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#menu" className="hover:text-amber-700 transition">
+                Menu
+              </a>
+            </li>
+            <li>
+              <a
+                href="#testimonials"
+                className="hover:text-amber-700 transition"
+              >
+                Testimonials
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="hover:text-amber-700 transition">
+                Contact
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -147,13 +150,13 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
           <div className="flex gap-4">
             <button
               onClick={onOpenPrivacy}
-              className="hover:text-amber-300 transition"
+              className="hover:text-amber-700 transition"
             >
               Privacy Policy
             </button>
             <button
               onClick={onOpenTerms}
-              className="hover:text-amber-300 transition"
+              className="hover:text-amber-700 transition"
             >
               Terms of Service
             </button>
