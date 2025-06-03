@@ -38,7 +38,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 mt-10 w-full sm:w-auto">
           <a
             href="#menu"
-            className="min-w-[180px] px-6 py-3 bg-amber-700 hover:bg-amber-400 text-white font-medium rounded-md shadow text-center transition-all duration-300 ease-in-out cursor-pointer"
+            className="min-w-[180px] px-6 py-3 bg-amber-700 hover:bg-amber-500 text-white font-medium rounded-md shadow text-center transition-all duration-300 ease-in-out cursor-pointer"
           >
             Explore Menu
           </a>

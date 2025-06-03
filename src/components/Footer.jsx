@@ -12,7 +12,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
         {/* Brand */}
         <div>
           <h3 className="text-xl font-bold drop-shadow-md">
-            <span className="text-amber-400">Toma's</span>{' '}
+            <span className="text-amber-500">Toma's</span>{' '}
             <span className="text-white">Kitchen</span>
           </h3>
           <p className="text-sm text-white/80 mt-2">
@@ -23,12 +23,12 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
 
         {/* Contact Info */}
         <div>
-          <h4 className="text-lg font-semibold text-amber-400 mb-3">
+          <h4 className="text-lg font-semibold text-amber-500 mb-3">
             Contact Info
           </h4>
           <ul className="space-y-3 text-sm text-white/80">
             <li className="flex items-start gap-2">
-              <MapPin className="h-4 w-4 text-amber-400 mt-0.5" />
+              <MapPin className="h-4 w-4 text-amber-500 mt-0.5" />
               <a
                 href="https://www.google.com/maps?q=Second+Drove+Unit+39,+Peterborough,+UK,+PE1+5XA"
                 target="_blank"
@@ -39,7 +39,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
               </a>
             </li>
             <li className="flex items-center gap-2">
-              <Phone className="h-4 w-4 text-amber-400" />
+              <Phone className="h-4 w-4 text-amber-500" />
               <a
                 href="tel:+447925622897"
                 className="hover:text-amber-700 transition"
@@ -48,7 +48,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
               </a>
             </li>
             <li className="flex items-center gap-2">
-              <Mail className="h-4 w-4 text-amber-400" />
+              <Mail className="h-4 w-4 text-amber-500" />
               <a
                 href="mailto:zeinalovas@gmail.com"
                 className="hover:text-amber-700 transition"
@@ -61,7 +61,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
 
         {/* Social Media */}
         <div>
-          <h4 className="text-lg font-semibold text-amber-400 mb-3">
+          <h4 className="text-lg font-semibold text-amber-500 mb-3">
             Follow Us
           </h4>
           <div className="flex gap-4">
@@ -69,7 +69,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
               href="https://www.facebook.com/profile.php?id=61575293242277"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded bg-amber-400 text-white hover:bg-amber-700 transition"
+              className="p-2 rounded bg-amber-500 text-white hover:bg-amber-700 transition"
             >
               <Facebook className="h-5 w-5" />
             </a>
@@ -77,7 +77,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded bg-amber-400 text-white hover:bg-amber-700 transition"
+              className="p-2 rounded bg-amber-500 text-white hover:bg-amber-700 transition"
             >
               <Instagram className="h-5 w-5" />
             </a>
@@ -85,7 +85,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
               href="https://tiktok.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded bg-amber-400 text-white hover:bg-amber-700 transition"
+              className="p-2 rounded bg-amber-500 text-white hover:bg-amber-700 transition"
             >
               <svg
                 className="h-5 w-5"
@@ -109,7 +109,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
 
         {/* Quick Links */}
         <div>
-          <h4 className="text-lg font-semibold text-amber-400 mb-3">
+          <h4 className="text-lg font-semibold text-amber-500 mb-3">
             Quick Links
           </h4>
           <ul className="space-y-2 text-sm text-white/80">
@@ -144,7 +144,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center text-sm text-white/60 space-y-2 sm:space-y-0">
           <p>
-            © {year} <span className="text-amber-400">Toma's</span> Kitchen. All
+            © {year} <span className="text-amber-500">Toma's</span> Kitchen. All
             rights reserved.
           </p>
           <div className="flex gap-4">
