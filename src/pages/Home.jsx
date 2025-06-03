@@ -7,14 +7,16 @@ import Footer from '../components/Footer';
 import Modal from '../components/Modal';
 import Privacy from '../components/Privacy';
 import Terms from '../components/Terms';
+import OrderModalContent from '../components/OrderModalContent';
 
 export default function Home() {
   const [showPrivacy, setShowPrivacy] = useState(false);
   const [showTerms, setShowTerms] = useState(false);
+  const [showOrderModal, setShowOrderModal] = useState(false);
 
   return (
     <div>
-      <Navbar />
+      <Navbar onOpenOrder={() => setShowOrderModal(true)} />
       <Hero />
       <Testimonials />
       <Menu />
@@ -31,12 +33,21 @@ export default function Home() {
       >
         <Privacy />
       </Modal>
+
       <Modal
         title="Terms of Service"
         isOpen={showTerms}
         onClose={() => setShowTerms(false)}
       >
         <Terms />
+      </Modal>
+
+      <Modal
+        title="Order Now"
+        isOpen={showOrderModal}
+        onClose={() => setShowOrderModal(false)}
+      >
+        <OrderModalContent />
       </Modal>
     </div>
   );
