@@ -60,7 +60,7 @@ export default function Navbar({ onOpenOrder }) {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-10 text-sm font-light tracking-wide">
-          {['home', 'menu', 'about', 'contact'].map((key) => (
+          {['home', 'menu', 'about'].map((key) => (
             <a
               key={key}
               href={`#${key}`}
@@ -104,7 +104,7 @@ export default function Navbar({ onOpenOrder }) {
       {/* Mobile Dropdown Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-black/80 px-6 pb-4 pt-2 space-y-2 text-sm transition-all duration-300 ease-in-out">
-          {['home', 'menu', 'about', 'contact'].map((key) => (
+          {['home', 'menu', 'about'].map((key) => (
             <a
               key={key}
               href={`#${key}`}
