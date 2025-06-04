@@ -8,6 +8,7 @@ import Modal from '../components/Modal';
 import Privacy from '../components/Privacy';
 import Terms from '../components/Terms';
 import OrderModalContent from '../components/OrderModalContent';
+import About from '../components/About';
 
 export default function Home() {
   const [showPrivacy, setShowPrivacy] = useState(false);
@@ -20,11 +21,11 @@ export default function Home() {
       <Hero />
       <Testimonials />
       <Menu />
+      <About />
       <Footer
         onOpenPrivacy={() => setShowPrivacy(true)}
         onOpenTerms={() => setShowTerms(true)}
       />
-
       {/* Modals */}
       <Modal
         title="Privacy Policy"
@@ -33,7 +34,6 @@ export default function Home() {
       >
         <Privacy />
       </Modal>
-
       <Modal
         title="Terms of Service"
         isOpen={showTerms}
@@ -41,7 +41,6 @@ export default function Home() {
       >
         <Terms />
       </Modal>
-
       <Modal
         title="Order Now"
         isOpen={showOrderModal}
