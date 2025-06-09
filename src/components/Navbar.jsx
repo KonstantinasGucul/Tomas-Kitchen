@@ -25,6 +25,11 @@ export default function Navbar({ onOpenOrder }) {
         }
       });
 
+      // 🔄 Update URL hash in browser (without reload)
+      if (current && window.location.hash !== `#${current}`) {
+        history.replaceState(null, '', `#${current}`);
+      }
+
       setActiveSection(current || 'home');
     };
 
