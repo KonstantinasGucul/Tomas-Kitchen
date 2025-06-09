@@ -4,9 +4,9 @@ export default function About() {
       id="about"
       className="bg-white text-gray-800 py-20 px-4 border-t border-gray-200"
     >
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         {/* Text Content */}
-        <div>
+        <div className="md:px-6">
           <h2 className="text-3xl font-bold text-amber-500 mb-4 drop-shadow">
             About Tomas’s Kitchen
           </h2>
@@ -41,12 +41,12 @@ export default function About() {
           </p>
         </div>
 
-        {/* Placeholder for future image */}
-        <div className="w-full md:h-auto max-w-md mx-auto md:mx-0">
+        {/* Image */}
+        <div className="w-full md:h-auto md:px-6">
           <img
             src="/images/Tomas-picture.webp"
             alt="Tomas, founder of Tomas's Kitchen"
-            className="w-full h-auto object-cover md:max-h-[460px]"
+            className="w-full h-auto object-cover object-[50%_20%] md:max-h-[460px]"
             loading="lazy"
           />
         </div>
