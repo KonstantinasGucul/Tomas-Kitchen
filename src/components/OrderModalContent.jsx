@@ -4,6 +4,13 @@ export default function OrderModalContent() {
       <p className="text-gray-800">
         Tomas is cooking live! Choose how you want to place your order:
       </p>
+
+      {/* Add this block below */}
+      <div className="text-sm text-gray-500 leading-tight space-y-1">
+        <p>📍 Pickup only — no delivery available</p>
+        <p>🕒 Open Monday to Friday, 9:00 AM – 5:00 PM</p>
+      </div>
+
       <div className="flex flex-col sm:flex-row justify-center gap-4">
         <a
           href="tel:+447925622897"
