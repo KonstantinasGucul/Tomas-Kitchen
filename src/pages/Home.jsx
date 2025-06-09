@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div>
       <Navbar onOpenOrder={() => setShowOrderModal(true)} />
-      <Hero />
+      <Hero onOpenOrder={() => setShowOrderModal(true)} />
       <Testimonials />
       <Menu />
       <About />

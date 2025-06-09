@@ -1,4 +1,4 @@
-export default function Hero() {
+export default function Hero({ onOpenOrder }) {
   return (
     <main id="home" className="min-h-screen relative overflow-hidden">
       {/* Background image with gradient overlay */}
@@ -43,7 +43,10 @@ export default function Hero() {
             Explore Menu
           </a>
 
-          <button className="min-w-[180px] px-6 py-3 border border-white/50 text-white hover:bg-white/10 font-medium rounded-md shadow transition-all duration-300 ease-in-out cursor-pointer">
+          <button
+            onClick={onOpenOrder}
+            className="min-w-[180px] px-6 py-3 border border-white/50 text-white hover:bg-white/10 font-medium rounded-md shadow transition-all duration-300 ease-in-out cursor-pointer"
+          >
             Contact
           </button>
         </div>
