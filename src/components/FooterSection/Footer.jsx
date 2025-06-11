@@ -131,11 +131,6 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
                 Testimonials
               </a>
             </li>
-            <li>
-              <a href="#contact" className="hover:text-amber-700 transition">
-                Contact
-              </a>
-            </li>
           </ul>
         </div>
       </div>

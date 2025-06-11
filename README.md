@@ -1,12 +1,72 @@
-# React + Vite
+# Toma's Kitchen — International Street Food Wagon 🍔🌯🥣
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fast, responsive, and beautiful single-page React + Vite website for Toma's Kitchen — a street food wagon serving wraps, burgers, soups, and more.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- **React** + **Vite**
+- **Tailwind CSS** for styling
+- **Lucide React** for icons
+- **Modular Component Architecture** (split by section)
+- **Responsive Design** (Mobile, Tablet, Desktop)
+- **Lazy Loaded Images** (WebP format)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📁 Project Structure
+
+public/
+├── favicon/ # Multi-platform icons
+└── images/
+├── about/
+├── hero/
+└── menu/
+
+src/
+├── components/
+│ ├── AboutSection/
+│ ├── FooterSection/
+│ ├── HeroSection/
+│ ├── MenuSection/
+│ ├── Modal/
+│ ├── NavbarSection/
+│ └── TestimonialsSection/
+├── pages/
+│ └── Home.jsx
+├── App.jsx
+├── main.jsx
+├── styles.css
+
+---
+
+## ✅ Features
+
+- Scroll-linked Navbar with smooth transitions
+- Collapsible menu categories with images
+- Section-based modular layout
+- Privacy Policy and Terms modals
+- Responsive across all major screen sizes
+- Clean folder organization
+- Easy to extend and maintain
+
+---
+
+## 🛠️ Setup
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Start the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## This website is not publicly accessible. Only the owner (Kostas) and Tomas use it privately via a Vercel deployment or by running it locally.
