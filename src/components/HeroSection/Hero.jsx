@@ -6,6 +6,8 @@ export default function Hero({ onOpenOrder }) {
         <img
           src="/images/hero/hero.webp"
           alt="Delicious street food"
+          width={1600}
+          height={900}
           className="w-full h-full object-cover"
           loading="lazy"
         />

@@ -5,7 +5,9 @@ export default function MenuCard({ name, price, image }) {
         <img
           src={image}
           alt={name}
-          className="w-full h-full object-cover object-center"
+          width={400}
+          height={300}
+          className="w-full h-48 object-cover rounded"
           loading="lazy"
         />
       </div>
