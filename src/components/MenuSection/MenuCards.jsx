@@ -5,20 +5,16 @@ export default function MenuCard({ name, price, image }) {
         <img
           src={image}
           alt={name}
-          width={400}
-          height={300}
-          className="w-full h-48 object-cover rounded"
+          className="w-full h-full object-cover"
           loading="lazy"
         />
       </div>
 
-      <div className="p-4">
-        <div className="p-4 space-y-1">
-          <h4 className="text-lg font-semibold text-gray-800 leading-snug">
-            {name}
-          </h4>
-          <span className="text-amber-600 font-medium block">{price}</span>
-        </div>
+      <div className="p-4 space-y-1">
+        <h4 className="text-lg font-semibold text-gray-800 leading-snug">
+          {name}
+        </h4>
+        <span className="text-amber-600 font-medium block">{price}</span>
       </div>
     </div>
   );
