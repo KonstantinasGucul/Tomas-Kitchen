@@ -54,6 +54,22 @@ export default function Menu() {
           <Category title="Wraps" items={menu.wraps} />
           <Category title="Fried Chicken" items={menu.chicken} />
           <Category title="Bowls & Soups" items={menu.bowlsAndSoups} />
+
+          {/* Special Request Section */}
+          <div className="mt-12 bg-white border border-amber-300 rounded-xl p-6 md:p-10 shadow-md text-center space-y-4">
+            <h3 className="text-2xl md:text-3xl font-bold text-amber-700">
+              Can’t Find Your Favorite?
+            </h3>
+            <p className="text-gray-700 text-base md:text-lg max-w-2xl mx-auto">
+              Craving something special that’s not on our menu? Whether it’s a
+              legendary family recipe or your dream dish — just let us know.
+              Tomas is always up for a challenge!
+            </p>
+            <p className="text-sm text-gray-500 italic">
+              Just pop by the wagon and tell Tomas what you’d love to eat — he’s
+              always listening.
+            </p>
+          </div>
         </div>
       </div>
     </section>

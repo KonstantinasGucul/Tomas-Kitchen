@@ -45,10 +45,9 @@ export default function About() {
         <div className="w-full md:h-auto md:px-6">
           <img
             src="/images/about/Tomas-picture.webp"
-            alt="Portrait of Tomas in front of the food wagon"
-            width={400}
-            height={600}
-            className="rounded-xl object-cover"
+            alt="Tomas, founder of Tomas's Kitchen"
+            className="w-full h-auto object-cover object-[50%_20%] md:max-h-[460px]"
+            loading="lazy"
           />
         </div>
       </div>
