@@ -35,7 +35,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
                 rel="noopener noreferrer"
                 className="hover:text-amber-700 transition"
               >
-                Second Drove Unit 39, Peterborough, UK, PE1 5XA
+                Peterborough, UK, PE1 5XB
               </a>
             </li>
             <li className="flex items-center gap-2">
