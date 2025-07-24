@@ -30,7 +30,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
             <li className="flex items-start gap-2">
               <MapPin className="h-4 w-4 text-amber-500 mt-0.5" />
               <a
-                href="https://www.google.com/maps/place/Peterborough+PE1+5XB/@52.5719213,-0.2150283,514m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4877f0617f4d4c47:0xc2ce28267ebdff21!8m2!3d52.5717731!4d-0.214254!16s%2Fg%2F1tfgcrhz?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D"
+                href="https://www.google.com/maps/place/PE1+5XB"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-amber-700 transition"
