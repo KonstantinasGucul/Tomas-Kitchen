@@ -35,7 +35,8 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
                 rel="noopener noreferrer"
                 className="hover:text-amber-700 transition"
               >
-                Peterborough, UK, PE1 5XB
+                Unit 1 Darlows Estate Fengate, Peterborough, UK, PE1 5XB (near
+                "Polbud" store)
               </a>
             </li>
             <li className="flex items-center gap-2">
