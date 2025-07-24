@@ -30,7 +30,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
             <li className="flex items-start gap-2">
               <MapPin className="h-4 w-4 text-amber-500 mt-0.5" />
               <a
-                href="https://www.google.com/maps/place/PE1+5XB"
+                href="https://www.google.com/maps/search/unit+1+darlows+estate+fengate+PE1+5XB"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-amber-700 transition"
